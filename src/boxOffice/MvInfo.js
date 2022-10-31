@@ -1,6 +1,7 @@
 import '../CSS/Mv.css'; 
 //useState Hook
 import { useState, useEffect, useRef } from 'react' ;
+import {useNavigate} from 'react-router-dom'
 
 function MvInfo(probs) {
   //json 데이터 가져오기
@@ -24,6 +25,14 @@ function MvInfo(probs) {
     'companys': '배급사',
   }
 
+  const url = {
+    '메인화면': '/'
+  }
+
+  const Click = (k) => {
+    navi(url[k])
+  }
+  const navi = useNavigate()
   //key1에 해당하는 값추출
   for (let k of key1) {
     myinfo[keys[k]] = mvinfo[k];
@@ -72,6 +81,7 @@ function MvInfo(probs) {
     <>
       <div className='mvList'>
         <h1 className='infoH1'>영화상세</h1>
+        <button onClick={() => Click('메인화면')}>메인화면</button>
         <ul className='infoUl'>
           {lis}
         </ul> 
