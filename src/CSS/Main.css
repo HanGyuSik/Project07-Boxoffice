@@ -1,0 +1,57 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.box_name {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box_form {
+  display: flex;
+  width: 120px;
+  height: 50px;
+  transition: all 1s ease-in-out;
+}
+
+.box_form:hover {
+  background-color: yellow;
+}
+
+.demo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(139, 0, 139, 0.2);
+  
+}
+
+.box_link{
+  display: flex;
+  width: 600px;
+}
+.box_span{
+  display: flex;
+  justify-content: center;
+  
+}
+.box_span:first-child{
+  width: 30px;
+  background-color: rgba(236, 253, 1, 0.952);
+}
+.box_span:last-child{
+  
+}
