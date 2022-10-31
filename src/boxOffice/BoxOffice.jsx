@@ -29,7 +29,7 @@ function Boxoffice() {
           <li className='box_name' key={item.movieCd}>
             <Link className='box_link' to={'/mv?mvcd=' + item.movieCd}>
               <span className='box_span'>{item.rank}</span>
-              <span className='box_span'>{item.movieNm}</span>
+              <span className='box_span1'>{item.movieNm}</span>
               <span className='box_span'>{item.rankInten > 0 ? '⬆️' : item.rankInten < 0 ? '⬇️' : ''}
               {Math.abs(Number(item.rankInten))}</span>
             </Link>
